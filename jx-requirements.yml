@@ -1,9 +1,8 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/yuhaozh/environment-jx-test-1-dev
 cluster:
-  clusterName: jx-test-1
+  clusterName: jx-test-2
   devEnvApprovers:
   - yuhaozh
   environmentGitOwner: yuhaozh
@@ -16,33 +15,9 @@ cluster:
   registry: gcr.io
   zone: asia-east2-a
 environments:
-- ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: dev
-- ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: staging
-- ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: production
+  - key: dev
+  - key: staging
+  - key: production
 gitops: true
 ingress:
   domain: ""
