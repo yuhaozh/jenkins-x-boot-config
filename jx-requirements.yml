@@ -2,7 +2,7 @@ autoUpdate:
   enabled: false
   schedule: ""
 cluster:
-  clusterName: jx-test-2
+  clusterName: jx-test-3
   devEnvApprovers:
   - yuhaozh
   environmentGitOwner: yuhaozh
@@ -11,8 +11,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   project: jenkins-x-283511
-  provider: gke
-  registry: gcr.io
+  provider: kubernetes
   zone: asia-east2-a
 environments:
   - key: dev
